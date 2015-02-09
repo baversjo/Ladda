@@ -35,7 +35,7 @@
 						$this.data( 'ladda', Ladda.create( this ) );
 					else {
 						ladda = $this.data( 'ladda' );
-						ladda[arg].apply( ladda, args );
+						ladda && ladda[arg].apply( ladda, args );
 					}
 				});
 			}
